@@ -66,3 +66,8 @@ services:
 
 volumes:
   db_data:
+
+networks:
+  default: # Ce 'default' est le nom interne à ce docker-compose pour le réseau externe 'gleyze'
+    name: gleyze # Assure la connexion au réseau externe nommé 'gleyze'
+    external: true
